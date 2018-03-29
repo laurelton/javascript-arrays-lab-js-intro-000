@@ -21,17 +21,19 @@ var destructivelyRemoveFirstKitten = function() {
 }
 
 var appendKitten = function(name) {
-
+  return kittens.concat([name]);
 }
 
 var prependKitten = function(name) {
-
+  return [name].concat(kittens);
 }
 
 var removeLastKitten = function() {
-
+  kittens.pop();
+  return kittens;
 }
 
 var removeFirstKitten = function() {
-
+  kittens.shift();
+  return kittens;
 }
