@@ -6,15 +6,18 @@ var destructivelyAppendKitten = function(name) {
 }
 
 var destructivelyPrependKitten = function(name) {
-
+  kittens.unshift(name);
+  return kittens;
 }
 
 var destructivelyRemoveLastKitten = function() {
-
+  kittens.pop();
+  return kittens;
 }
 
 var destructivelyRemoveFirstKitten = function() {
-
+  kittens.shift();
+  return kittens;
 }
 
 var appendKitten = function(name) {
